@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#020812" />
+  <title>HydroTechnic | Όλα τα Έργα</title>
+  <meta name="description" content="Όλα τα έργα της HydroTechnic: υδραυλικές εγκαταστάσεις, μπάνια, θέρμανση, ηλιακοί θερμοσίφωνες και τεχνικές εργασίες." />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="assets/hydrotechnic-logo-transparent.png" as="image" />
+  <link rel="preload" href="assets/brk-construction-logo-transparent.png" as="image" />
+</head>
+<body>
+
+  <a href="#all-projects" class="skip-link">Μετάβαση στο περιεχόμενο</a>
+  <div class="noise"></div>
+  <canvas class="shader-canvas" id="shaderCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="mouse-ring" id="mouseRing" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="brand-switch">
+        <button class="brand-button" id="brandSwitch" aria-label="Επιλογή εταιρείας" aria-expanded="false" aria-controls="brandDropdown">
+          <img src="assets/hydrotechnic-logo-transparent.png" alt="HydroTechnic and partners logo" />
+          <span>HydroTechnic</span>
+          <b>⌄</b>
+        </button>
+        <div class="brand-dropdown" id="brandDropdown">
+          <a href="index.html">
+            <img src="assets/hydrotechnic-logo-transparent.png" alt="HydroTechnic logo" />
+            <span>HydroTechnic</span>
+          </a>
+          <a href="brk.html">
+            <img src="assets/brk-construction-logo-transparent.png" alt="BRK Construction logo" />
+            <span>BRK Construction</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Άνοιγμα μενού">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Αρχική</a></li>
+        <li><a href="index.html#services">Υπηρεσίες</a></li>
+        <li><a href="hydrotechnic-projects.html" class="active">Έργα / Blog</a></li>
+        <li><a href="index.html#about">Σχετικά</a></li>
+        <li><a href="index.html#contact">Επικοινωνία</a></li>
+        <li><a href="brk.html">BRK Construction</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="all-projects">
+    <section class="all-projects-hero section-shell reveal">
+      <p class="small-title">HYDROTECHNIC PROJECTS</p>
+      <h1>Όλα τα Έργα HydroTechnic</h1>
+      <p>Εδώ μπαίνουν όλες οι δουλειές από υδραυλικά, ανακαινίσεις μπάνιου, θέρμανση, ηλιακούς και τεχνικές εγκαταστάσεις.</p>
+      <div class="hero-actions">
+        <a href="#hydro-project-list" class="btn primary">Δείτε όλα τα έργα <span>→</span></a>
+        <a href="index.html" class="btn secondary">Πίσω στην αρχική</a>
+      </div>
+    </section>
+
+    <section id="hydro-project-list" class="projects section-shell reveal">
+      <div class="section-head">
+        <div>
+          <p class="small-title">BLOG ΕΡΓΩΝ</p>
+          <h2>Αρχείο έργων HydroTechnic</h2>
+          <p>Μπορείς να προσθέτεις συνέχεια νέες κάρτες έργων εδώ.</p>
+        </div>
+      </div>
+
+      <div class="project-filters" aria-label="Φίλτρα έργων HydroTechnic">
+        <button class="filter-btn active" type="button" data-filter="all">Όλα</button>
+        <button class="filter-btn" type="button" data-filter="bathrooms">Μπάνια</button>
+        <button class="filter-btn" type="button" data-filter="plumbing">Υδραυλικές εργασίες</button>
+        <button class="filter-btn" type="button" data-filter="renovations">Ανακαινίσεις</button>
+        <button class="filter-btn" type="button" data-filter="heating">Θέρμανση</button>
+        <button class="filter-btn" type="button" data-filter="solar">Ηλιακοί</button>
+        <button class="filter-btn" type="button" data-filter="repairs">Επισκευές</button>
+      </div>
+
+      <div class="project-grid extended-grid filter-grid">
+        <article class="project-card filter-item" data-category="plumbing">
+          <div class="project-img pipes"><span class="date">15<br>ΜΑΪ<br>2026</span></div>
+          <div class="project-content">
+            <p>Υδραυλικές εγκαταστάσεις</p>
+            <h3>Εγκατάσταση Δικτύου Ύδρευσης</h3>
+            <span>Νέες παροχές, σωληνώσεις, έλεγχος πίεσης και στεγανότητας.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+
+        <article class="project-card filter-item" data-category="bathrooms renovations">
+          <div class="project-img bathroom"><span class="date">02<br>ΜΑΪ<br>2026</span></div>
+          <div class="project-content">
+            <p>Ανακαίνιση μπάνιου</p>
+            <h3>Πλήρης Ανακαίνιση Μπάνιου</h3>
+            <span>Υδραυλικά, αποχέτευση, τοποθέτηση ειδών υγιεινής και παράδοση.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+
+        <article class="project-card filter-item" data-category="heating">
+          <div class="project-img heating"><span class="date">20<br>ΑΠΡ<br>2026</span></div>
+          <div class="project-content">
+            <p>Θέρμανση</p>
+            <h3>Εγκατάσταση Θέρμανσης</h3>
+            <span>Σωστές συνδέσεις, έλεγχος κυκλώματος και λειτουργική παράδοση.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+
+        <article class="project-card filter-item" data-category="solar">
+          <div class="project-img solar"><span class="date">08<br>ΑΠΡ<br>2026</span></div>
+          <div class="project-content">
+            <p>Ηλιακοί θερμοσίφωνες</p>
+            <h3>Τοποθέτηση Ηλιακού</h3>
+            <span>Σύνδεση, μόνωση, έλεγχος λειτουργίας και τεχνική παράδοση.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+
+        <article class="project-card filter-item" data-category="plumbing repairs">
+          <div class="project-img pipes"><span class="date">30<br>ΜΑΡ<br>2026</span></div>
+          <div class="project-content">
+            <p>Αποχέτευση</p>
+            <h3>Νέα Γραμμή Αποχέτευσης</h3>
+            <span>Σωστή κλίση, μηχανοσίφωνας, αντεπίστροφο και καθαρή εφαρμογή.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+
+        <article class="project-card filter-item" data-category="bathrooms plumbing">
+          <div class="project-img bathroom"><span class="date">18<br>ΜΑΡ<br>2026</span></div>
+          <div class="project-content">
+            <p>Είδη υγιεινής</p>
+            <h3>Τοποθέτηση Νιπτήρα & Μπαταριών</h3>
+            <span>Αλφαδιασμένη τοποθέτηση, σιλικόνες, συνδέσεις και τελικός έλεγχος.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+
+        <article class="project-card filter-item" data-category="heating repairs">
+          <div class="project-img heating"><span class="date">05<br>ΜΑΡ<br>2026</span></div>
+          <div class="project-content">
+            <p>Συντήρηση</p>
+            <h3>Καθαρισμός Καλοριφέρ</h3>
+            <span>Έλεγχος κυκλώματος, εξαέρωση και βελτίωση απόδοσης θέρμανσης.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+
+        <article class="project-card filter-item" data-category="repairs plumbing">
+          <div class="project-img solar"><span class="date">22<br>ΦΕΒ<br>2026</span></div>
+          <div class="project-content">
+            <p>Τεχνική εργασία</p>
+            <h3>Επισκευή Διαρροής</h3>
+            <span>Εντοπισμός προβλήματος, επισκευή και έλεγχος πριν την παράδοση.</span>
+            <a href="index.html#contact">Ζητήστε προσφορά →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div>
+      <img src="assets/hydrotechnic-logo-transparent.png" alt="HydroTechnic logo" />
+      <p>Υδραυλικές εγκαταστάσεις και τεχνικά έργα με ποιότητα, συνέπεια και εμπιστοσύνη.</p>
+    </div>
+
+    <div>
+      <h4>HydroTechnic σύνδεσμοι</h4>
+      <a href="index.html">Αρχική</a>
+      <a href="index.html#services">Υπηρεσίες</a>
+      <a href="hydrotechnic-projects.html">Έργα / Blog</a>
+      <a href="index.html#contact">Επικοινωνία</a>
+    </div>
+
+    <div>
+      <h4>Άλλη εταιρεία</h4>
+      <a href="brk.html">BRK Construction</a>
+    </div>
+
+    <div>
+      <p>© 2026 HYDROTECHNIC and partners.<br>All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
