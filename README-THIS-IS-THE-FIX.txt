@@ -1,0 +1,11 @@
+ΑΥΤΟ ΕΙΝΑΙ ΤΟ ΤΕΛΙΚΟ FIX ΠΑΝΩ ΣΤΟ ZIP ΠΟΥ ΑΝΕΒΑΣΕΣ:
+- Δεν χρησιμοποιεί τις παλιές χαλασμένες fp classes για τα έργα.
+- Χρησιμοποιεί νέο σύστημα: clean-projects / clean-card / projects-clean.js.
+- Στο Hydro header, το Έργα πάει στο hydrotechnic-projects.html.
+- Στο BRK header, το Έργα πάει στο brk-projects.html.
+- Δεν υπάρχει κοινή erga.html για να μπερδεύονται τα έργα.
+- hydrotechnic-projects.html δείχνει ΜΟΝΟ HydroTechnic έργα.
+- brk-projects.html δείχνει ΜΟΝΟ BRK έργα.
+- Στην αρχική, τα φίλτρα δείχνουν ΜΕΧΡΙ 4 έργα ανά κατηγορία.
+- Τα έργα δουλεύουν σε κινητό/iPhone γιατί δεν κρύβονται από παλιά CSS/JS.
+- Header και footer είναι όπως ζητήθηκαν.
