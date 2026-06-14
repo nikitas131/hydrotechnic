@@ -2542,6 +2542,67 @@ html {
   margin-top: auto !important;
   align-self: flex-start !important;
 }
+
+/* ======================================================
+   FINAL DESKTOP FIX - PROJECT CARDS
+   ΒΑΛ' ΤΟ ΤΕΛΕΥΤΑΙΟ ΣΤΟ styles.css
+   ====================================================== */
+
+/* Τα έργα να ΜΗΝ τεντώνονται σε τεράστια cards */
+.project-grid,
+.extended-grid,
+.preview-grid,
+.archive-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 320px)) !important;
+  gap: 24px !important;
+  justify-content: start !important;
+  align-items: stretch !important;
+}
+/* ======================================================
+   FINAL DESKTOP FIX - PROJECT CARDS
+   ΒΑΛ' ΤΟ ΤΕΛΕΥΤΑΙΟ ΣΤΟ styles.css
+   ====================================================== */
+
+/* Τα έργα να ΜΗΝ τεντώνονται σε τεράστια cards */
+.project-grid,
+.extended-grid,
+.preview-grid,
+.archive-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 320px)) !important;
+  gap: 24px !important;
+  justify-content: start !important;
+  align-items: stretch !important;
+}
+/* ======================================================
+   MOBILE PROJECTS
+   ====================================================== */
+
+@media (max-width: 760px) {
+  .project-grid,
+  .extended-grid,
+  .preview-grid,
+  .archive-grid {
+    grid-template-columns: 1fr !important;
+    justify-content: stretch !important;
+  }
+
+  .project-card {
+    max-width: none !important;
+    min-height: 0 !important;
+  }
+
+  .project-img {
+    height: 210px !important;
+    flex-basis: 210px !important;
+  }
+
+  .project-content h3,
+  .project-content span {
+    min-height: auto !important;
+  }
+}
 }
 
 
