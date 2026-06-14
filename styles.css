@@ -419,6 +419,107 @@ a{color:inherit;text-decoration:none}
     linear-gradient(135deg,#d9d9d9,#646b72 38%,#1d252c 39%,#cfd4d8 70%,#38424c);
 }
 
+/* === FIX ΓΙΑ ΤΑ ΕΡΓΑ ΝΑ ΜΗΝ ΣΠΑΝΕ ΤΑ ΜΕΓΕΘΗ === */
+
+.project-grid,
+.extended-grid,
+.preview-grid,
+.archive-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+/* Μεγάλη οθόνη: μέχρι 4 κάρτες */
+@media (min-width: 1200px) {
+  .project-grid,
+  .extended-grid,
+  .preview-grid,
+  .archive-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Μεσαία οθόνη: 2 κάρτες */
+@media (max-width: 1199px) and (min-width: 700px) {
+  .project-grid,
+  .extended-grid,
+  .preview-grid,
+  .archive-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Κινητό: 1 κάρτα */
+@media (max-width: 699px) {
+  .project-grid,
+  .extended-grid,
+  .preview-grid,
+  .archive-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* === ΣΤΑΘΕΡΟ ΜΕΓΕΘΟΣ CARD === */
+
+.project-card {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  min-height: 455px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+.project-img {
+  width: 100% !important;
+  height: 200px !important;
+  flex: 0 0 200px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden !important;
+}
+
+.project-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+.project-content {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 20px !important;
+}
+
+.project-content h3 {
+  min-height: 2.6em !important;
+  line-height: 1.3 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+.project-content span {
+  min-height: 4.6em !important;
+  line-height: 1.5 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+.project-content a {
+  margin-top: auto !important;
+}
+
 .heating{
   background-image:
     linear-gradient(120deg,rgba(0,0,0,.1),rgba(0,0,0,.55)),
