@@ -3033,7 +3033,7 @@ html, body {
 .brand-duo img {
   height: 46px !important;
   width: auto !important;
-  max-width: 115px !important;
+  max-width: 170px !important;
   object-fit: contain !important;
   flex: 0 0 auto !important;
 }
@@ -3056,7 +3056,7 @@ html, body {
   justify-content: center !important;
   border-radius: 999px !important;
   color: #dcecff !important;
-  font-size: .7rem !important;
+  font-size: 0.52rem !important;
   font-weight: 950 !important;
   text-decoration: none !important;
   white-space: nowrap !important;
