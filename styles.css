@@ -3648,4 +3648,53 @@ img {
     opacity: 1 !important;
     transform: none !important;
   }
+/* FIX mobile header brand text */
+@media (max-width: 600px) {
+  .clean-header {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: visible;
+  }
+
+  .brand-duo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    flex: 1;
+    max-width: calc(100% - 54px);
+    overflow: hidden;
+  }
+
+  .brand-duo img {
+    width: 42px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .brand-duo-options {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .brand-duo-option {
+    font-size: 10px;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 135px;
+    padding: 0;
+  }
+
+  .clean-burger {
+    flex-shrink: 0;
+  }
+}
 }
