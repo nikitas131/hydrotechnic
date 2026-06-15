@@ -815,7 +815,6 @@ a{color:inherit;text-decoration:none}
   max-width: 780px;
 }
 
-/* Standalone BRK page */
 .brk-hero {
   min-height: 690px;
   padding-top: 90px;
@@ -986,9 +985,6 @@ a{color:inherit;text-decoration:none}
 .process-grid p {
   color: var(--muted);
 }
-
-```css
-/* BRK Quality + FAQ Section */
 
 .brk-quality {
   padding-top: 78px;
